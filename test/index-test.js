@@ -1,3 +1,4 @@
+"use strict"; 
 describe('index', () => {
   describe('getFirstSelector(selector)', () => {
     it('returns the first element that matches the selector', () => {
@@ -10,7 +11,8 @@ describe('index', () => {
     it('pulls a .target out of #nested', () => {
       expect(nestedTarget()).toEqual(document.querySelector('#nested .target'))
     })
-  })
+
+  }) 
 
   describe('deepestChild()', () => {
     it('returns the most deeply nested child in #grand-node', () => {
@@ -40,5 +42,6 @@ describe('index', () => {
         expect(parseInt(children[i].innerHTML)).toEqual(start - i + 3)
       }
     })
-  })
-})
+  }) 
+
+}) 
